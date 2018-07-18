@@ -1,0 +1,8 @@
+// axios.get("http://localhost:8080/api/items")
+
+
+after adding "proxy": "http://localhost:8080" in package.json of client we can use
+// axios.get("/api/items");
+
+
+To run client and server both at the same time, we'll use "concurrently"
