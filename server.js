@@ -27,7 +27,7 @@ app.use("/api/items", items);
 // Serve static assets if we are in production
 if(process.env.NODE_ENV === "production") {
     // Set static folder
-    app.use(express.static("/client/build"));
+    app.use(express.static("client/build"));
 
     app.get("*", (req, res) => {
         // Take response and go to client then build and then load the index.html file
