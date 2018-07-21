@@ -7,7 +7,7 @@ export const getItems = () => {
     return {
         type: GET_ITEMS
     };
-}
+};
 */
 export const getItems = () => (dispatch) => {
     dispatch(setItemsLoading());
@@ -21,7 +21,7 @@ export const getItems = () => (dispatch) => {
                 }
             )
         )
-}
+}; 
 
 /*
 export const addItem = (item) => {
@@ -29,7 +29,7 @@ export const addItem = (item) => {
         type: ADD_ITEM,
         payload: item
     };
-}
+};
 */
 export const addItem = (item) => (dispatch) => {
     axios
@@ -42,7 +42,7 @@ export const addItem = (item) => (dispatch) => {
                 }
             )
         )
-}
+};
 
 /*
 export const deleteItem = (_id) => {
@@ -50,7 +50,7 @@ export const deleteItem = (_id) => {
         type: DELETE_ITEM,
         payload: _id
     };
-}
+};
 */
 export const deleteItem = (_id) => (dispatch) => {
     axios
@@ -63,11 +63,11 @@ export const deleteItem = (_id) => (dispatch) => {
                 }
             )
     )
-}
+};
 
 
 export const setItemsLoading = () => {
     return { 
         type: ITEMS_LOADING
-    }
-}
+    };
+};
