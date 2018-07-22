@@ -1,0 +1,5 @@
+# dependencies
+/node_modules
+
+# heroku git clone
+/arcane-harbor-39889
